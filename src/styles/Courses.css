@@ -1,0 +1,65 @@
+.Courses {
+  margin: 80px auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.course img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  z-index: 1;
+}
+
+.course {
+  flex-basis: 31%;
+  position: relative;
+}
+
+.degree {
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 15, 152, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.4s;
+  z-index: 2;
+}
+
+.degree img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.degree img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.course:hover .degree {
+  opacity: 1;
+  padding-top: 0;
+}
+
+/* Media Query */
+
+@media (max-width: 650px) {
+  .Courses {
+    flex-direction: column;
+  }
+  .course {
+    flex-basis: 100%;
+    margin: 20px;
+  }
+}
